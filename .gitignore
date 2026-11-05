@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+
+# Entornos y configuración privada
+.env
+.env.*
+!.env.example
+secrets.yaml
+secrets.yml
+
+# Home Assistant: datos y configuración de producción
+config/
+.storage/
+home-assistant_v2.db
+home-assistant_v2.db-shm
+home-assistant_v2.db-wal
+
+# Docker y backups
+*.bak
+*.backup
+*.log
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Git
+*.swp
+*.swo
+*~

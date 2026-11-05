@@ -1,0 +1,11 @@
+services:
+  homeassistant:
+    container_name: homeassistant
+    image: homeassistant-custom:2026.11.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - /PATH/TO/HOMEASSISTANT/CONFIG:/config
+    restart: unless-stopped
+    network_mode: host
